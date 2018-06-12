@@ -44,6 +44,13 @@ exports.up = function(knex, Promise) {
             table.string('password').notNullable();
         }),
 
+        knex.schema.createTable('permission', function (table) {
+            table.uuid('channel').notNullable();
+            table.uuid('author').notNullable();
+            table.foreign('author').references('user.id').onDelete('CASCADE');
+            table.foreign('channel').references('channel.id').onDelete('CASCADE');
+        }),
+
         knex.schema.createTable('post', function (table) {
             table.uuid('id').primary();
             table.uuid('channel').notNullable();

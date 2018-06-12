@@ -1,11 +1,12 @@
 const knex = require("../../connection");
 const dbMisc = require("./database_misc_v1");
+const dbChannels = require("./database_channels_v1");
 var pageSize = 20;
 
 function getPostById(id, completion) {
     console.log(id);
     knex('post').where({id: id}).then(function (value) {
-        adjustPost(value[0]).then(completion);
+        adjustPosts(value).then(completion);
     });
 }
 
@@ -41,10 +42,14 @@ function adjustPosts(posts) {
 
 function adjustPost(post) {
     return new Promise(function(fulfill) {
-        dbMisc.getPublicInfoForAuthorId(post.authorID, function (author) {
-            post.authorID = undefined;
-            post.author = author;
-            fulfill(post);
+        dbChannels.getChannelById(post.channel, function (channel) {
+            post.channel = channel[0];
+
+            dbMisc.getPublicInfoForAuthorId(post.authorID, function (author) {
+                post.authorID = undefined;
+                post.author = author;
+                fulfill(post);
+            });
         });
     });
 }
