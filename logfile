@@ -1,0 +1,23 @@
+2018-08-20 20:04:48.272 -03 [3973] LOG:  listening on IPv6 address "::1", port 5432
+2018-08-20 20:04:48.272 -03 [3973] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-08-20 20:04:48.273 -03 [3973] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-08-20 20:04:48.293 -03 [3974] LOG:  database system was shut down at 2018-08-20 20:04:25 -03
+2018-08-20 20:04:48.298 -03 [3973] LOG:  database system is ready to accept connections
+2018-08-20 20:04:54.775 -03 [3994] FATAL:  database "ncast" does not exist
+2018-08-20 20:04:54.775 -03 [3995] FATAL:  database "ncast" does not exist
+2018-08-20 20:04:54.776 -03 [3996] FATAL:  database "ncast" does not exist
+2018-08-20 20:05:23.131 -03 [4005] FATAL:  database "juliobbl" does not exist
+2018-08-20 20:05:49.918 -03 [4020] FATAL:  role "DATABASE" does not exist
+2018-08-20 20:06:00.392 -03 [4032] FATAL:  role "DATABASE" does not exist
+2018-08-20 20:08:32.993 -03 [4069] FATAL:  database "ncast" does not exist
+2018-08-20 20:08:32.993 -03 [4067] FATAL:  database "ncast" does not exist
+2018-08-20 20:08:32.993 -03 [4068] FATAL:  database "ncast" does not exist
+2018-08-20 20:09:40.893 -03 [4117] FATAL:  database "ncast" does not exist
+2018-08-20 22:22:29.836 -03 [4863] ERROR:  invalid input syntax for type uuid: "00000000-0000-0001-0000-000000000000,00000000-0000-0002-0000-000000000000,00000000-0000-0003-0000-000000000000,00000000-0000-0004-0000-000000000000,00000000-0000-0005-0000-000000000000,00000000-0000-0006-0000-000000000000,00000000-0000-0007-0000-000000000000,00000000-0000-0008-0000-000000000000,00000000-0000-0009-0000-000000000000,00000000-0000-0010-0000-000000000000,00000001-0000-0001-0000-000000000000,00000001-0000-0002-0000-000000000000,00000001-0000-0003-0000-000000000000,00000001-0000-0004-0000-000000000000"
+2018-08-20 22:22:29.836 -03 [4863] STATEMENT:  select * from "channel" where "id" = $1
+2018-08-20 22:27:43.616 -03 [4898] ERROR:  invalid input syntax for type uuid: "00000000-0000-000-0000-000000000000"
+2018-08-20 22:27:43.616 -03 [4898] STATEMENT:  select * from "post" where "channel" = $1 and LOWER(title) LIKE $2 order by "postDate" desc limit $3
+2018-08-22 12:42:06.559 -03 [3973] LOG:  received smart shutdown request
+2018-08-22 12:42:06.561 -03 [3973] LOG:  worker process: logical replication launcher (PID 3980) exited with exit code 1
+2018-08-22 12:42:06.561 -03 [3975] LOG:  shutting down
+2018-08-22 12:42:06.576 -03 [3973] LOG:  database system is shut down

@@ -6,8 +6,8 @@ module.exports = {
         client: 'postgresql',
         connection: {
             host: "localhost",
-            user: "ncast",
-            password: "ncast",
+            // user: "ncast",
+            // password: "ncast",
             database: "ncast"
         },
         migrations: {

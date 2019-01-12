@@ -28,21 +28,21 @@ exports.seed = function(knex, Promise) {
                                             entity: '00000001-0000-0000-0000-000000000000',
                                             name: 'Grupo do Facebook',
                                             link: 'www.pudim.com.br',
-                                            imageURL: 'mc5_images_GrupoFace.png'
+                                            imageURL: 'https://imgur.com/h0qzNKD.png'
                                         },
                                         {
                                             id: '00000001-0002-0000-0000-000000000000',
                                             entity: '00000001-0000-0000-0000-000000000000',
                                             name: 'TIA',
                                             link: 'https://www3.mackenzie.br/tia/index.php',
-                                            imageURL: 'mc5_images_TIA.png'
+                                            imageURL: 'https://imgur.com/kWtfe59.png'
                                         },
                                         {
                                             id: '00000001-0003-0000-0000-000000000000',
                                             entity: '00000001-0000-0000-0000-000000000000',
                                             name: 'Moodle',
                                             link: 'https://moodle.mackenzie.br/moodle/',
-                                            imageURL: 'mc5_images_Moodle.png'
+                                            imageURL: 'https://imgur.com/gm43Pz2.png'
                                         }
                                     ]).then(function () {
                                         return knex('channel').insert([
@@ -51,88 +51,88 @@ exports.seed = function(knex, Promise) {
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'TCC e Pesquisa',
                                                 hexColor: 'f2c500',
-                                                imageURL: 'mc5_images_pesquisa.jpg'
+                                                imageURL: 'https://imgur.com/2Tj43Us.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0002-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Monitoria',
-                                                imageURL: 'mc5_images_noticias1.jpg'
+                                                imageURL: 'https://imgur.com/oy8jNcf.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0003-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Notícias',
-                                                imageURL: 'mc5_images_noticias2.jpg'
+                                                imageURL: 'https://imgur.com/nM0NNPu.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0004-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Internacionalização',
-                                                imageURL: 'mc5_images_graduacao.jpeg'
+                                                imageURL: 'https://imgur.com/iM7ljw4.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0005-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Gastronomia',
-                                                imageURL: 'mc5_images_graduacao.jpeg'
+                                                imageURL: 'https://imgur.com/iM7ljw4.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0006-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Nutrição',
-                                                imageURL: 'mc5_images_eventos1.jpg'
+                                                imageURL: 'https://imgur.com/DnU1dLr.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0007-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Farmácia',
-                                                imageURL: 'mc5_images_eventos2.jpg'
+                                                imageURL: 'https://imgur.com/2BxTPel.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0008-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Fisioterapia',
-                                                imageURL: 'mc5_images_eventos1.jpg'
+                                                imageURL: 'https://imgur.com/DnU1dLr.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0009-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Psicologia',
-                                                imageURL: 'mc5_images_eventos2.jpg'
+                                                imageURL: 'https://imgur.com/2BxTPel.jpeg'
                                             },
                                             {
                                                 id: '00000000-0000-0010-0000-000000000000',
                                                 entity: '00000000-0000-0000-0000-000000000000',
                                                 name: 'Eventos Biológicas',
-                                                imageURL: 'mc5_images_eventos1.jpg'
+                                                imageURL: 'https://imgur.com/DnU1dLr.jpeg'
                                             },
 
                                             {
                                                 id: '00000001-0000-0001-0000-000000000000',
                                                 entity: '00000001-0000-0000-0000-000000000000',
                                                 name: 'Estágios',
-                                                imageURL: 'mc5_images_eventos2.jpg'
+                                                imageURL: 'https://imgur.com/2BxTPel.jpeg'
                                             },
                                             {
                                                 id: '00000001-0000-0002-0000-000000000000',
                                                 entity: '00000001-0000-0000-0000-000000000000',
                                                 name: 'Notícias',
-                                                imageURL: 'mc5_images_noticias1.jpg'
+                                                imageURL: 'https://imgur.com/oy8jNcf.jpeg'
                                             },
                                             {
                                                 id: '00000001-0000-0003-0000-000000000000',
                                                 entity: '00000001-0000-0000-0000-000000000000',
                                                 name: 'Atv. Complementares',
                                                 hexColor: 'e67e22',
-                                                imageURL: 'mc5_images_graduacao.jpeg'
+                                                imageURL: 'https://imgur.com/iM7ljw4.jpeg'
                                             },
                                             {
                                                 id: '00000001-0000-0004-0000-000000000000',
                                                 entity: '00000001-0000-0000-0000-000000000000',
                                                 name: 'Eventos',
                                                 hexColor: '3498db',
-                                                imageURL: 'mc5_images_graduacao.jpeg'
+                                                imageURL: 'https://imgur.com/iM7ljw4.jpeg'
                                             }
                                         ]).then(function () {
                                             return knex('role').insert([
